@@ -1,0 +1,20 @@
+.original-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-left:20px;
+    gap: 50px;
+
+    img{
+        height: 500px;
+        width: 700px;
+    }
+
+    p{
+        margin-right: 140px;
+        margin-left: 140px;
+    }
+}
+

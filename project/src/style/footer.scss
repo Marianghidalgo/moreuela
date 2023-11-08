@@ -1,0 +1,64 @@
+.footer-container{
+    display:flex;
+    flex-direction: column; 
+}
+
+.footer-links{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    padding-top: 200px;
+    
+    a{
+        text-decoration:none;
+        font-family: 'Titillium Web', sans-serif;
+        color:grey;
+        font-size:20px;
+    }
+    
+}
+
+.social-footer{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    padding-top: 35px;
+
+    .btn-instagram{
+        border:none;
+        cursor: pointer;
+        font-size: 18px;
+
+        a{
+        color: grey;
+        }   
+    }
+
+    .btn-facebook{
+        border:none;
+        font-size: 18px;
+
+        a{
+            color:grey;
+        }
+    }
+
+    .btn-youtube{
+        border:none;
+        font-size: 18px;
+
+        a{
+            color: grey;
+        }
+    }
+  
+}
+.subscribe-footer{
+        
+    display:flex;
+    justify-content: center;
+    gap: 5px;
+    padding-top:75px;
+    color:grey;
+   
+}

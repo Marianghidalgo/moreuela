@@ -1,0 +1,48 @@
+.records{
+    .new-records{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+       
+    img{
+        width:300px;  
+    } 
+
+}
+.image-description {
+    margin:5px;
+    img{
+        width: 500px;
+       
+    }
+}
+    
+.blog-card{
+    width: 300px;
+    margin-left:90px;
+    margin-top:90px;
+
+    a{
+      text-align: center; 
+      font-size:12px;
+      text-decoration: none;
+      color:grey;
+    }
+
+    .image{
+        
+        img{
+            align-items: center;
+        }
+    }
+
+    .content{
+       p{
+        color: grey;
+        font-size: 18px;
+       
+       } 
+    }
+}
+
+

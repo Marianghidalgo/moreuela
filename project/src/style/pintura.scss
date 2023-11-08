@@ -1,0 +1,34 @@
+.imagep{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+
+    .image-pintura {
+        display:flex;
+        justify-content: center;
+        img{
+        width: 55%;
+        height: 45%;
+        align-items: center;
+           
+    }
+}
+
+    .text-pintura{
+        text-align:center;
+        padding:90px 90px;
+        font-size:30px;
+        color:#5e5e5e;
+    }
+
+    .registration-box{
+        display:flex;
+        justify-content: center;
+        
+        .comment-box{
+            width: 900px;
+        }
+        
+    }
+}
+

@@ -1,0 +1,48 @@
+.card_body {
+    margin: 5px;
+    align-items: center;
+    
+    
+
+    img{
+        position: relative;
+        height: 270px;
+        width: 100%; 
+    }
+
+    .card_title{
+        
+        margin-top:10px;
+        font-size:25px;
+    }
+
+    
+
+    .card__btn  {  
+        cursor:pointer;
+        
+        border:none;
+        background-color:   #dcd7d0;
+         
+    }
+
+    a{
+        text-decoration:none;
+        color:black;
+        background-color: #dcd7d0;  
+    }
+}
+
+.cards_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding-bottom: 100px;
+
+
+    .text-card{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+}

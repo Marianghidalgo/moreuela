@@ -1,0 +1,50 @@
+.itemCarusel{
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    position: relative;
+}
+
+.img-carusel{
+    img{
+       width: 100%;
+        height: 100%;
+    }
+}
+
+.flechas{
+    
+    position:absolute;
+    top: 350px;
+    width: 65em;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    
+    
+   
+    .btn-prev{
+        color: whitesmoke;
+        background-color: transparent;
+        border:none;
+        font-size:20px;
+    }
+    .btn-next{
+        color: whitesmoke;
+        background-color: transparent;
+        border:none;
+        font-size:20px;
+        
+    }
+}
+
+
+
+
+
+   
+    
+
+      
+    
+

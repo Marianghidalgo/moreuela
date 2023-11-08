@@ -1,0 +1,41 @@
+.description{
+    display:flex;
+    flex-direction: column;
+    padding-top: 70px;
+
+    .text-title{
+        display:flex;
+        justify-content: center;
+        font-size: 35px;
+        padding-bottom: 50px;
+        
+    }
+
+    .image-description{
+        display:flex;
+        justify-content: center;
+        padding-bottom: 80px;
+
+        
+    }
+
+    .content{
+        display:flex;
+        margin-left: 180px;
+        margin-right: 180px;
+        font-size:18px;
+        padding-bottom: 80px;
+    }
+    
+
+    .blog-form {
+        display:flex;
+        justify-content: center;
+
+        .comment-box{
+            width: 900px;
+        }
+        
+    }
+}
+
