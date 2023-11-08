@@ -8,7 +8,7 @@ I have done API Flask.
 
 Step 1: 
 Install pipenv environment with pipenv. 
-The dataBase is in app.py.
+The DataBase is in app.sqlite.
 
 
 Step 2: 
