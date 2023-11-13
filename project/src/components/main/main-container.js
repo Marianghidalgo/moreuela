@@ -6,7 +6,7 @@ import MainItem from "./main-item";
 import MainCards from "./main-cards";
 import MainFooter from "./main-footer";
 import Carusel from "./carusel";
-
+import { API_BASE_URL } from "../../constants";
 
 
 export default class MainContainer extends Component {
@@ -24,7 +24,7 @@ export default class MainContainer extends Component {
 
   getMainItems() {
     axios
-      .get("http://127.0.0.1:5000/portfolios")
+      .get(`${API_BASE_URL}/portfolios`)
       .then(response => {
         console.log("response data", response);
         this.setState({

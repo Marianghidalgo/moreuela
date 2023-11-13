@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import CommentBox from "../form/form";
 import MainFooter from "../main/main-footer";
+import { API_BASE_URL } from "../../constants";
 
 
 export default class BlogDescription extends Component {
@@ -19,7 +20,7 @@ export default class BlogDescription extends Component {
 
     getBlogArticle() {
         axios.get(
-          `http://127.0.0.1:5000/guide/${this.state
+          `${API_BASE_URL}/guide/${this.state
             .currentId}`
         ).then(response => {
             console.log("response", response);

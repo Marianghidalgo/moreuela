@@ -5,6 +5,7 @@ import axios from "axios";
 import ShopArticle from "../shop/shop-article";
 import MainFooter from "../main/main-footer";
 import CartArticle from "../shop/cart-article";
+import { API_BASE_URL } from "../../constants";
 
 class Shop extends Component {
     constructor() {
@@ -40,7 +41,7 @@ class Shop extends Component {
     
     getShopArticles() {
       axios
-        .get(" http://127.0.0.1:5000/shops", {
+        .get(`${API_BASE_URL}/shops`, {
           withCredentials: true
         })
         .then(response => {

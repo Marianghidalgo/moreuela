@@ -4,6 +4,8 @@ import axios from "axios";
 
 import BlogArticle from "../blog/blog-article";
 import MainFooter from "../main/main-footer";
+import { API_BASE_URL } from "../../constants";
+
 
 
 class Blog extends Component {
@@ -19,7 +21,7 @@ class Blog extends Component {
 
   getBlogArticles() {
     axios
-      .get(" http://127.0.0.1:5000/guides", {
+      .get(`${API_BASE_URL}/guides`, {
         withCredentials: true
       })
       .then(response => {

@@ -4,6 +4,7 @@ import axios from "axios";
 
 import ProjectArticle from "../project/project-article";
 import MainFooter from "../main/main-footer";
+import { API_BASE_URL } from "../../constants";
 
 
 class Project extends Component {
@@ -19,7 +20,7 @@ class Project extends Component {
 
     getProjectArticles() {
     axios
-      .get(" http://127.0.0.1:5000/projects", {
+      .get(`${API_BASE_URL}/projects`, {
         withCredentials: true
       })
       .then(response => {

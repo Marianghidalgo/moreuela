@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import axios from 'axios';
 
 import MainFooter from "../main/main-footer";
+import { API_BASE_URL } from "../../constants";
+
 
 
 
@@ -17,7 +19,7 @@ export default class ProjectDescription extends Component {
 
   getProjectArticle() {
     axios.get(
-      `http://127.0.0.1:5000/project/${this.state
+      `${API_BASE_URL}/project/${this.state
         .currentId}`
       ).then(response => {
           console.log("response", response);

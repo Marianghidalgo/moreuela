@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import axios from "axios";
 
 import MainFooter from "./main-footer";
+import { API_BASE_URL } from "../../constants";
 
 
 class MainDetail extends Component{
@@ -22,7 +23,7 @@ class MainDetail extends Component{
     
     getInformation (id) {
         axios
-          .get("http://127.0.0.1:5000/portfolio/" + id)
+          .get(`${API_BASE_URL}/portfolio/` + id)
           .then(response => {
             console.log("response data", response);
             this.setState({
