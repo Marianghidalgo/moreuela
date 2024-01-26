@@ -19,7 +19,7 @@ export default class MainContainer extends Component {
       data: []
     };
 
-    
+
   }
 
   getMainItems() {
@@ -40,12 +40,12 @@ export default class MainContainer extends Component {
     return this.state.data.map(item => {
       console.log("main item", item);
       return (
-      <MainItem 
-      key={item.id}  
-      item={item}
-      />
-      
-      );  
+        <MainItem
+          key={item.id}
+          item={item}
+        />
+
+      );
     });
   }
 
@@ -59,28 +59,28 @@ export default class MainContainer extends Component {
     }
 
     return (
-      <div>  
-        <div className= "main-items-wrapper">
-        {this.mainItems()}
+      <div>
+        <div className="main-items-wrapper">
+          {this.mainItems()}
         </div>
 
-      <div className= "news">
-        <p>CLASSES</p>
+        <div className="news">
+          <p>CLASSES</p>
         </div>
 
-      <div className= "cards_react">
-      <MainCards />
-      </div>
+        <div className="cards_react">
+          <MainCards />
+        </div>
 
-      <div className= "carusel">
-       <Carusel />
-      </div>
-      
-      <div className="footers">
-        <MainFooter />
-      </div>
+        <div className="carusel">
+          <Carusel />
+        </div>
 
-    </div>
+        <div className="footers">
+          <MainFooter />
+        </div>
+
+      </div>
     );
   }
 }
