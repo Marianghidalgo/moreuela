@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-
 import MainItem from "./main-item";
 import MainCards from "./main-cards";
 import MainFooter from "./main-footer";
 import Carusel from "./carusel";
 import { API_BASE_URL } from "../../constants";
-
 
 export default class MainContainer extends Component {
   constructor() {
@@ -16,36 +14,26 @@ export default class MainContainer extends Component {
     this.state = {
       pageTitle: "",
       isLoading: false,
-      data: []
+      data: [],
     };
-
-    
   }
 
   getMainItems() {
     axios
       .get(`${API_BASE_URL}/portfolios`)
-      .then(response => {
-        console.log("response data", response);
+      .then((response) => {
         this.setState({
-          data: response.data
+          data: response.data,
         });
       })
-      .catch(error => {
-        console.log(error);
+      .catch((error) => {
+        console.error(error);
       });
   }
 
   mainItems() {
-    return this.state.data.map(item => {
-      console.log("main item", item);
-      return (
-      <MainItem 
-      key={item.id}  
-      item={item}
-      />
-      
-      );  
+    return this.state.data.map((item) => {
+      return <MainItem key={item.id} item={item} />;
     });
   }
 
@@ -59,28 +47,25 @@ export default class MainContainer extends Component {
     }
 
     return (
-      <div>  
-        <div className= "main-items-wrapper">
-        {this.mainItems()}
+      <div>
+        <div className="main-items-wrapper">{this.mainItems()}</div>
+
+        <div className="news">
+          <p>CLASSES</p>
         </div>
 
-      <div className= "news">
-        <p>CLASSES</p>
+        <div className="cards_react">
+          <MainCards />
         </div>
 
-      <div className= "cards_react">
-      <MainCards />
-      </div>
+        <div className="carusel">
+          <Carusel />
+        </div>
 
-      <div className= "carusel">
-       <Carusel />
+        <div className="footers">
+          <MainFooter />
+        </div>
       </div>
-      
-      <div className="footers">
-        <MainFooter />
-      </div>
-
-    </div>
     );
   }
 }

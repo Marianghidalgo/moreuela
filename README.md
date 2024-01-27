@@ -16,7 +16,7 @@ Install in node:
 npm run start
 
 
-And enjoy!!!!!
+And enjoy!
 
 Thanks 
 
